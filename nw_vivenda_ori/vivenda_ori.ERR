@@ -1,0 +1,161 @@
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\fedi_articolo.vcx has the following errors:
+    Unknown XSQLEXEC2VAR - Undefined
+    Unknown XDEFAULT - Undefined
+    Unknown MNEWOBJECT0 - Undefined
+    Unknown RECSIGNTEST - Undefined
+    Unknown OLDVAL4SPT - Undefined
+    Unknown XSQLEXEC - Undefined
+    Unknown MNEWOBJECT1 - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\fedi_cfcli.vcx has the following errors:
+    Unknown XSQLEXEC2VAR - Undefined
+    Unknown XDEFAULT - Undefined
+    Unknown XMESSAGEBOX - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\fedi_doc_ca.vcx has the following errors:
+    Unknown XTOTMD_CALCOLO - Undefined
+    Unknown XINITTOOLBAR - Undefined
+    Unknown XBLOCCOEMISSIONI - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\pers\vivenda_ori\forms\fedi_doc.vcx has the following errors:
+    Unknown XTOTMD_CALCOLO - Undefined
+    Unknown XINITTOOLBAR - Undefined
+    Unknown XBLOCCOEMISSIONI - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\fedi_doccommon.vcx has the following errors:
+    Unknown XSQLEXEC2VAR - Undefined
+    Unknown XDEFAULT - Undefined
+    Unknown MNEWOBJECT0 - Undefined
+    Unknown XSQLEXEC - Undefined
+    Unknown XMESSAGEBOX - Undefined
+    Unknown RUNFEDIWS - Undefined
+    Unknown CREATEDIRECTORY - Undefined
+    Unknown ONCOLCLICKMAKEINDEX - Undefined
+    Unknown RUNGENERIC - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\_cmd_xribaltamento.vcx has the following errors:
+    Unknown XSQLEXEC2VAR - Undefined
+    Unknown XDEFAULT - Undefined
+    Unknown MNEWOBJECT0 - Undefined
+    Unknown XSQLEXEC - Undefined
+    Unknown XMESSAGEBOX - Undefined
+    Unknown CREATEDOCUMENTS - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\cmd_arcosto.vcx has the following errors:
+    Unknown XSQLEXEC - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\cmd_fte_import.vcx has the following errors:
+    Unknown XDEFAULT - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\cmd_ximport.vcx has the following errors:
+    Unknown XSQLEXEC2VAR - Undefined
+    Unknown XDEFAULT - Undefined
+    Unknown MNEWOBJECT0 - Undefined
+    Unknown XSQLEXEC - Undefined
+    Unknown XMESSAGEBOX - Undefined
+    Unknown CREATEDOCUMENTS - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\cmd_xprenotazioni.vcx has the following errors:
+    Unknown XSQLEXEC2VAR - Undefined
+    Unknown XSQLEXEC - Undefined
+    Unknown XMESSAGEBOX - Undefined
+    Unknown CREATEDOCUMENT - Undefined
+
+Visual Class Library c:\...\pers\vivenda_ori\forms\cmd_xribaltamento - da documenti.vcx has the following errors:
+    Unknown XSQLEXEC2VAR - Undefined
+    Unknown XDEFAULT - Undefined
+    Unknown MNEWOBJECT0 - Undefined
+    Unknown XSQLEXEC - Undefined
+    Unknown XMESSAGEBOX - Undefined
+    Unknown CREATEDOCUMENTS - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\cmd_xribaltamento.vcx has the following errors:
+    Unknown XSQLEXEC2VAR - Undefined
+    Unknown XDEFAULT - Undefined
+    Unknown MNEWOBJECT0 - Undefined
+    Unknown XSQLEXEC - Undefined
+    Unknown XMESSAGEBOX - Undefined
+    Unknown CREATEDOCUMENTS - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\pers\vivenda_ori\forms\fedi_cf.vcx has the following errors:
+    Unknown XSQLEXEC2VAR - Undefined
+    Unknown XDEFAULT - Undefined
+    Unknown XMESSAGEBOX - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\fedi_cffor.vcx has the following errors:
+    Unknown XSQLEXEC2VAR - Undefined
+    Unknown XDEFAULT - Undefined
+    Unknown XMESSAGEBOX - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\pers\vivenda_ori\forms\fedi_do.vcx has the following errors:
+    Unknown MNEWOBJECT1 - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\fedi_xarformato.vcx has the following errors:
+    Unknown XDEFAULT - Undefined
+    Unknown XMESSAGEBOX - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\fedi_xemailattach.vcx has the following errors:
+    Unknown RECSIGNTEST - Undefined
+    Unknown OLDVAL4SPT - Undefined
+    Unknown XMESSAGEBOX - Undefined
+    Unknown ONCOLCLICKMAKEINDEX - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\fedi_xgestioneemailauto.vcx has the following errors:
+    Unknown XDEFAULT - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\fedi_xscontocassa.vcx has the following errors:
+    Unknown XMESSAGEBOX - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\fedi_xtipocassaprevidenza.vcx has the following errors:
+    Unknown XMESSAGEBOX - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\repo_schedecontabili.vcx has the following errors:
+    Unknown XMESSAGEBOX - Undefined
+
+Visual Class Library c:\...\artel\arcaevolution\pers\vivenda_ori\forms\ritenuteca.vcx has the following errors:
+    Unknown XSQLEXEC2VAR - Undefined
+    Unknown MNEWOBJECT0 - Undefined
+    Unknown MNEWOBJECT1 - Undefined
+    Unknown XMESSAGEBOX - Undefined
+    Unknown MNEWOBJECT - Undefined
+    Unknown RUNFEDI - Undefined
+    Unknown RENUMBERCURSOR - Undefined
+    Unknown OBJISA - Undefined
+    Unknown XSQLEXEC2OBJ - Undefined
+    Unknown NEWOBJECT1 - Undefined
+    Unknown CGESERCIZIO - Undefined
+    Unknown AFN_FE_GETNATURA - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\libs\stdform.vcx has the following errors:
+    Unknown EXTLIBSWRONGWARNING - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\libs\stdctrl.vcx has the following errors:
+    Unknown EXTLIBSWRONGWARNING - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\libs\_basecusctrl.vcx has the following errors:
+    Unknown EXTLIBSWRONGWARNING - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\libs\spcctrl.vcx has the following errors:
+    Unknown EXTLIBSWRONGWARNING - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\libs\_baseothctrl.vcx has the following errors:
+    Unknown EXTLIBSWRONGWARNING - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\libs\baseform.vcx has the following errors:
+    Unknown EXTLIBSWRONGWARNING - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\libs\_basevfpctrl.vcx has the following errors:
+    Unknown EXTLIBSWRONGWARNING - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\libs\_baseolectrl.vcx has the following errors:
+    Unknown EXTLIBSWRONGWARNING - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\libs\_baseform.vcx has the following errors:
+    Unknown EXTLIBSWRONGWARNING - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\libs\sbnew.vcx has the following errors:
+    Unknown EXTLIBSWRONGWARNING - Undefined
+
+Visual Class Library c:\program files (x86)\artel\arcaevolution\libs\basectrl.vcx has the following errors:
+    Unknown EXTLIBSWRONGWARNING - Undefined
+

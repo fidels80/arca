@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <Pages>
+    <Page Name="pgGenerale" Caption="Principale">
+		<Button  Name="Vendite"		Left="10"  Top="10"  Cmd="ThisForm.Navigate2Page('pgVendite')"										Image="pers\[%DITTA%]\icons\portafoglio.png"	Title="Clicca qui per gestire le vendite"			Desc="" />
+		<Button  Name="Fornitori"	Left="380" Top="10"  Cmd="ThisForm.Navigate2Page('pgMovForn')"										Image="pers\[%DITTA%]\icons\schedario.png"		Title="Clicca qui per gestire movimenti forn."		Desc="" />
+		<Button  Name="Anagrafe"	Left="10"  Top="240" Cmd="ThisForm.Navigate2Page('pgAnagrafe')"										Image="pers\[%DITTA%]\icons\clifor.png"			Title="Clicca qui per gestire le anagrafiche"		Desc="" />
+		<Button  Name="Servizio"	Left="380" Top="240" Cmd="ThisForm.Navigate2Page('pgServizio')"										Image="pers\[%DITTA%]\icons\strumenti.png"		Title="Clicca qui per il gli strumenti di servizio" Desc="" />
+		<Button  Name="Esci"		Left="380" Top="300" Cmd="ThisForm.Release()"														Image="pers\[%DITTA%]\icons\exit.png"			Title="Clicca qui per uscire dalla maschera"		Desc="" />
+	</Page>
+    <Page Name="pgAnagrafe" Caption="Anagrafiche">
+		<Button  Name="Modelli"		Left="10"  Top="10"	 Cmd="ThisForm.Navigate2Page('pgModelli')"										Image="pers\[%DITTA%]\icons\modello.png"		Title="Clicca qui per gestire i modelli"			Desc="" />
+		<Button  Name="Fidelity"	Left="10"  Top="70"	 Cmd="RunFediWS(ClassRedirector('fedi_vbcliente', 'fedi'), ThisForm)"			Image="pers\[%DITTA%]\icons\rubrica.png"		Title="Clicca qui per gestire carte fedeltà"		Desc="" />
+		<Button  Name="Clienti"		Left="10"  Top="240" Cmd="RunFediWS(ClassRedirector('fedi_cfcli', 'fedi'), ThisForm)"				Image="pers\[%DITTA%]\icons\cliente.png"		Title="Clicca qui per l'elenco dei clienti"			Desc="" />
+		<Button  Name="Fornitori"	Left="10"  Top="300" Cmd="RunFediWS(ClassRedirector('fedi_cffor', 'fedi'), ThisForm)"				Image="pers\[%DITTA%]\icons\fornitore.png"		Title="Clicca qui per l'elenco dei fornitori"		Desc="" />
+		<Button  Name="ListinoV"	Left="380" Top="240" Cmd="ThisForm.RunFediWS_LSFiltered(1)"											Image="pers\[%DITTA%]\icons\listino2.png"		Title="Clicca qui per gestire listini vendita"		Desc="" />
+		<Button  Name="ListinoA"	Left="380" Top="300" Cmd="ThisForm.RunFediWS_LSFiltered(2)"											Image="pers\[%DITTA%]\icons\listino3.png"		Title="Clicca qui per gestire listini fornitore"	Desc="" />
+	</Page>
+    <Page Name="pgModelli" Caption="Modelli">
+		<Button  Name="Modelli"		Left="10"  Top="10"	 Cmd="RunFediWS(ClassRedirector('fedi_articolo', 'fedi'), ThisForm)"			Image="pers\[%DITTA%]\icons\modello2.png"		Title="Clicca qui per l'elenco dei modelli"			Desc="" />
+		<Button  Name="CreaModif"	Left="10"  Top="70"	 Cmd="RunCmdWS(ClassRedirector('cmd_modello', 'cmd'), ThisForm)"				Image="pers\[%DITTA%]\icons\modello3.png"		Title="Clicca qui per creare/modificare modelli"	Desc="" />
+		<Button  Name="VR1"			Left="10"  Top="240" Cmd="ThisForm.Navigate2Page('pgVR2')"											Image="pers\[%DITTA%]\icons\vrgruppo2.png"		Title="Clicca qui per gestire le [%VRGRUPPO2%]"		Desc="" />
+		<Button  Name="VR2"			Left="10"  Top="300" Cmd="ThisForm.Navigate2Page('pgVR1')"											Image="pers\[%DITTA%]\icons\vrgruppo1.png"		Title="Clicca qui per gestire le [%VRGRUPPO1%]"		Desc="" />
+		<Button  Name="Attributi"	Left="380" Top="240" Cmd="ThisForm.Navigate2Page('pgAttributi')"									Image="pers\[%DITTA%]\icons\attributo.png"		Title="Clicca qui per gestire altri attributi"		Desc="" />
+    </Page>
+    <Page Name="pgMovForn" Caption="Acquisti">
+		<Button  Name="Ordini"		Left="10"  Top="10"	 Cmd="RunFediWS(ClassRedirector('fedi_doc', 'fedi'), ThisForm,,,0x00002000)"	Image="pers\[%DITTA%]\icons\ordine.png"			Title="Clicca qui per gestire ordini a fornitore"	Desc="" />
+		<Button  Name="Evadi"		Left="10"  Top="70"  Cmd="RunCmdWS(ClassRedirector('cmd_doevadi_xvr', 'cmd'), ThisForm)"			Image="pers\[%DITTA%]\icons\evasione.png"		Title="Clicca qui per evasione ordini"				Desc="" />
+		<Button  Name="Carichi"		Left="10"  Top="240" Cmd="RunFediWS(ClassRedirector('fedi_doc', 'fedi'), ThisForm,,,0x00004000)"	Image="pers\[%DITTA%]\icons\carico.png"			Title="Clicca qui per gestire carichi fornitore"	Desc="" />
+		<Button  Name="Resi"		Left="10"  Top="300" Cmd="RunFediWS(ClassRedirector('fedi_doc', 'fedi'), ThisForm,,,0x00040000)"	Image="pers\[%DITTA%]\icons\reso.png"			Title="Clicca qui per gestire resi a fornitore"		Desc="" />
+		<Button  Name="Listino"		Left="380" Top="300" Cmd="ThisForm.RunFediWS_LSFiltered(2)"											Image="pers\[%DITTA%]\icons\listino3.png"		Title="Clicca qui per gestire listini fornitore"	Desc="" />
+    </Page>
+    <Page Name="pgVendite" Caption="Vendite">
+		<Button  Name="Vendite"		Left="10"  Top="10"	 Cmd="RunGenWS(ClassRedirector('gen_vbscontrino', 'gen'), ThisForm)"			Image="pers\[%DITTA%]\icons\listino.png"		Title="Clicca qui per gestire vendite al banco"		Desc="" />
+		<Button  Name="Fidelity"	Left="10"  Top="70"	 Cmd="RunFediWS(ClassRedirector('fedi_vbcliente', 'fedi'), ThisForm)"			Image="pers\[%DITTA%]\icons\rubrica.png"		Title="Clicca qui per gestire carte fedeltà"		Desc="" />
+		<Button  Name="Modelli"		Left="10"  Top="240" Cmd="ThisForm.Navigate2Page('pgModelli')"										Image="pers\[%DITTA%]\icons\modello.png"		Title="Clicca qui per gestire i modelli"			Desc="" />
+		<Button  Name="Listino"		Left="10"  Top="300" Cmd="ThisForm.RunFediWS_LSFiltered(1)"											Image="pers\[%DITTA%]\icons\listino2.png"		Title="Clicca qui per gestire listini vendita"		Desc="" />
+    </Page>
+    <Page Name="pgServizio" Caption="Servizio">
+		<Button  Name="Servizio"	Left="10"  Top="10"	 Cmd=""																			Image="pers\[%DITTA%]\icons\import.png"			Title="Clicca qui per l'importazione  di ???"		Desc="" />
+		<Button  Name="Config"		Left="10"  Top="70"  Cmd="RunGenWS(ClassRedirector('gen_matrixconfig', 'gen'), ThisForm)"			Image="pers\[%DITTA%]\icons\impostazioni.png"	Title="Clicca qui per gestire le configurazioni"	Desc="" />
+		<Button  Name="Statistiche"	Left="10"  Top="240" Cmd=""																			Image="pers\[%DITTA%]\icons\statistiche.png"	Title="Clicca qui per statistiche di ???"			Desc="" />
+		<Button  Name="Etichetta"	Left="10"  Top="300" Cmd=""																			Image="pers\[%DITTA%]\icons\etichetta.png"		Title="Clicca qui per la stampa etichette"			Desc="" />
+    </Page>
+    <Page Name="pgVR1" Caption="[%VR1%]">
+		<Button  Name="VRGruppo1"	Left="10"  Top="10"	 Cmd="RunFediWS(ClassRedirector('fedi_xvrgruppo', 'fedi'), ThisForm,,,1)"		Image="pers\[%DITTA%]\icons\vrgruppo1.png"		Title="Clicca qui per le [%VRGRUPPO1%]"				Desc="" />
+		<Button  Name="VR1"			Left="10"  Top="70"	 Cmd="RunFediWS(ClassRedirector('fedi_xvr', 'fedi'), ThisForm,,,1)"				Image="pers\[%DITTA%]\icons\vr1.png"			Title="Clicca qui per l'elenco delle [%VR1%]"		Desc="" />
+    </Page>
+    <Page Name="pgVR2" Caption="[%VR2%]">
+		<Button  Name="VRGruppo2"	Left="10"  Top="10"  Cmd="RunFediWS(ClassRedirector('fedi_xvrgruppo', 'fedi'), ThisForm,,,2)"		Image="pers\[%DITTA%]\icons\vrgruppo2.png"		Title="Clicca qui per le [%VRGRUPPO2%]"				Desc="" />
+		<Button  Name="VR2"			Left="10"  Top="70"  Cmd="RunFediWS(ClassRedirector('fedi_xvr', 'fedi'), ThisForm,,,2)"				Image="pers\[%DITTA%]\icons\vr2.png"			Title="Clicca qui per l'elenco dei [%VR2%]"			Desc="" />
+    </Page>
+    <Page Name="pgAttributi" Caption="Attributi">
+		<Button  Name="Attributo1"	Left="10"  Top="10"	 Cmd="ThisForm.RunFediWS_xARAttributo(1)"										Image="pers\[%DITTA%]\icons\attributo.png"		Title="Clicca qui per l'elenco delle [%ATTR1%]"		Desc="" />
+		<Button  Name="Attributo2"	Left="10"  Top="70"  Cmd="ThisForm.RunFediWS_xARAttributo(2)"										Image="pers\[%DITTA%]\icons\attributo1.png"		Title="Clicca qui per l'elenco dei [%ATTR2%]"		Desc="" />
+		<Button  Name="Attributo3"	Left="10"  Top="240" Cmd="ThisForm.RunFediWS_xARAttributo(3)"										Image="pers\[%DITTA%]\icons\attributo2.png"		Title="Clicca qui per l'elenco dei [%ATTR3%]"		Desc="" />
+		<Button  Name="Attributo4"	Left="10"  Top="300" Cmd="ThisForm.RunFediWS_xARAttributo(4)"										Image="pers\[%DITTA%]\icons\attributo3.png"		Title="Clicca qui per l'elenco dei [%ATTR4%]"		Desc="" />
+		<Button  Name="Attributo5"	Left="380" Top="10"  Cmd="ThisForm.RunFediWS_xARAttributo(5)"										Image="pers\[%DITTA%]\icons\attributo4.png"		Title="Clicca qui per l'elenco dei [%ATTR5%]"		Desc="" />
+    </Page>
+  </Pages>

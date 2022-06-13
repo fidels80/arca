@@ -1,0 +1,24 @@
+*--------------------------------------------------------------------------------------
+* Example2.prg
+*--------------------------------------------------------------------------------------
+* FoxBarcodeQR example report
+*--------------------------------------------------------------------------------------
+
+SET PROCEDURE TO LOCFILE("FoxBarcodeQR.prg") ADDITIVE
+
+*--- Create FoxBarcodeQR private object
+PRIVATE poFbc
+m.poFbc = CREATEOBJECT("FoxBarcodeQR")
+
+CREATE CURSOR TempQR (TempQR char(15))
+SELECT tempqr
+FOR i=1 TO 4
+INSERT INTO TempQR VALUES (PADL(ALLTRIM(STR(i)),9,'0'))
+i=i+1
+next
+*INSERT INTO TempQR VALUES (0)
+
+REPORT FORM FoxBarcodeQR  preview
+USE IN TempQR
+
+m.poFbc = NULL

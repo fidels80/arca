@@ -1,0 +1,57 @@
+#define CRLF CHR(13)+CHR(10)
+SET STEP on
+
+CREATE CURSOR tmp_doc (;
+NumEnte varchar(200),;
+DEsEnte varchar(200),;
+NumReparto varchar(200),;
+DesReparto varchar(200),;
+Giorno varchar(200),;
+Codartfor varchar(200),;
+Barcode varchar(200),;
+DEcodifica varchar(200),;
+qta varchar(200),;
+vallordo varchar(200),;
+Valsconto varchar(200))
+lcFile = FILETOSTR(GETFILE('txt','File Coin','Apri',0))
+lcFileName = SYS(2015)+[.TXT]
+STRTOFILE(SUBSTR(lcFile,AT(CRLF, lcFile)+2),lcFileName)
+
+SELECT tmp_doc
+APPEND FROM (lcFileName) DELIMITED WITH TAB
+DELETE FROM tmp_doc WHERE NumEnte  like '%Num%'
+
+
+TEXT TO csql TEXTMERGE noshow
+SELECT * FROM dotes WHERE 1=2
+endtext
+xsqlexec(csql,'x_dotes')
+TEXT TO csql TEXTMERGE noshow
+SELECT * FROM dorig WHERE 1=2
+endtext
+xsqlexec(csql,'x_dorig')
+
+SELECT numente FROM tmp_doc GROUP BY numente INTO CURSOR x_sedi readwrite
+i=1
+SELECT x_sedi
+SCAN
+TEXT TO csql TEXTMERGE noshow
+SELECT * FROM cfdest WHERE cd_cf='C000016' AND LTRIM(RTRIM(x_coin))=LTRIM(RTRIM(<<Format4Spt(x_sedi.numente)>>))
+endtext
+xsqlexec(csql,'x_sedecf')
+SELECT x_dotes
+APPEND BLANK
+replace id_dotes with i
+replace cd_do WITH 'FTA'
+replace cd_cf WITH 'C000016'
+replace datadoc WITH  DTOC(DATE())
+replace cd_cfdest with LTRIM(RTRIM(x_sedecf.cd_cfdest))
+i=i+1
+SELECT x_sedi
+ENDSCAN
+
+
+
+
+
+
